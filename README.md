@@ -1,5 +1,7 @@
 # micro-truffle
 
+[![Node.js CI](https://github.com/Akagi201/micro-truffle/actions/workflows/ci.yml/badge.svg)](https://github.com/Akagi201/micro-truffle/actions/workflows/ci.yml)
+
 Truffle boilerplate code
 
 ## Features
