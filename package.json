@@ -8,7 +8,7 @@
     "build": "truffle compile",
     "develop": "truffle develop",
     "migrate:moonbase-alpha": "truffle migrate --network moonbase",
-    "migrate:moonbeam-dev": "truffle migrate --network dev",
+    "migrate:moonbeam-dev": "truffle migrate --network dev --reset",
     "moonbeam-install": "truffle run moonbeam install",
     "moonbeam-pause": "truffle run moonbeam pause",
     "moonbeam-remove": "truffle run moonbeam remove",

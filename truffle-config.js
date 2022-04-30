@@ -9,7 +9,7 @@ const privateKeyDev =
 // NOTE: Do not store your private key in plaintext files
 //       this is only for demostration purposes only
 const privateKeyMoonbase =
-  "5fb92d6e98884f76de468fa3f6278f8807c48bebc13595d45af5bdc4da702133";
+  "13e755880a9cfda5417971a487aaef6ea4b5fc87ee3a4a47a20efe3ab846478a";
 
 module.exports = {
   networks: {
