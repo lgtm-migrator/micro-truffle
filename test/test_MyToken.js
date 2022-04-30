@@ -48,4 +48,10 @@ contract("MyToken", (accounts) => {
     const balance2 = await token.balanceOf.call(accounts[2]);
     assert.equal(balance2, amountTransfer, "accounts[2] balance is wrong");
   });
+
+  // Check token name should match
+  it("token name match", async () => {
+    const name = await token.name();
+    assert.equal(name, "MyToken", "token name should match");
+  });
 });
