@@ -28,6 +28,7 @@ Truffle boilerplate code
 - [Chainlist](https://chainlist.org/)
 - [Ethereum networks](https://ethereum.org/en/developers/docs/networks/)
 - [DODOEX truffle config](https://github.com/DODOEX/contractV2/blob/main/truffle-config.js)
+- [TheGraph supported networks](https://thegraph.com/docs/en/hosted-service/what-is-hosted-service/#supported-networks-on-the-hosted-service)
 
 ## Testnet faucet
 
