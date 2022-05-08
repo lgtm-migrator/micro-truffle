@@ -52,6 +52,48 @@ module.exports = {
       },
       network_id: 1287,
     },
+    moonriver: {
+      provider: () => {
+        if (!privateKeyMoonbase.trim()) {
+          throw new Error(
+            "Please enter a private key with funds to send transactions to MainNet",
+          );
+        }
+        return new HDWalletProvider(
+          privateKeyMoonbase,
+          "https://rpc.moonriver.moonbeam.network",
+        );
+      },
+      network_id: 1285,
+    },
+    heco: {
+      provider: () => {
+        if (!privateKeyDev.trim()) {
+          throw new Error(
+            "Please enter a private key with funds to send transactions to MainNet",
+          );
+        }
+        return new HDWalletProvider(
+          privateKeyDev,
+          "https://http-mainnet.hecochain.com",
+        );
+      },
+      network_id: 128,
+    },
+    avax: {
+      provider: () => {
+        if (!privateKeyDev.trim()) {
+          throw new Error(
+            "Please enter a private key with funds to send transactions to MainNet",
+          );
+        }
+        return new HDWalletProvider(
+          privateKeyDev,
+          "https://api.avax.network/ext/bc/C/rpc",
+        );
+      },
+      network_id: 43114,
+    },
     rinkeby: {
       provider: () => {
         if (!privateKeyDev.trim()) {
