@@ -38,6 +38,9 @@ jobs:
       # - name: slither
       #   uses: crytic/slither-action@v0.1.1
 
+      - name: start ganache
+        run: npx ganache-cli -p 7545&
+
       - name: npm test
         run: npm test
 
