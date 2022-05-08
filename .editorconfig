@@ -7,9 +7,9 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 
 [*.md]
-insert_final_newline = false
-trim_trailing_whitespace = false
+insert_final_newline = true
+trim_trailing_whitespace = true
 
-[*.{js,json,ts,yml,yaml}]
+[*.{js,json,ts,yml,yaml,sol}]
 indent_size = 2
 indent_style = space

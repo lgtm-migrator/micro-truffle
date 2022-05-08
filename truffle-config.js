@@ -11,6 +11,8 @@ const privateKeyDev =
 const privateKeyMoonbase =
   "13e755880a9cfda5417971a487aaef6ea4b5fc87ee3a4a47a20efe3ab846478a";
 
+const infuraId = "60e1abccbdab4163a25a5572fb0435b8";
+
 module.exports = {
   networks: {
     // Moonbeam Development Network
@@ -24,6 +26,11 @@ module.exports = {
         return new HDWalletProvider(privateKeyDev, "http://localhost:9933/");
       },
       network_id: 1281,
+    },
+    test: {
+      host: "127.0.0.1",
+      port: 7545,
+      network_id: "*",
     },
     // Moonbase Alpha TestNet
     moonbase: {
@@ -45,11 +52,28 @@ module.exports = {
       },
       network_id: 1287,
     },
+    rinkeby: {
+      provider: () => {
+        if (!privateKeyDev.trim()) {
+          throw new Error(
+            "Please enter a private key with funds, you can use the default one",
+          );
+        }
+        return new HDWalletProvider(privateKeyDev, "https://rinkeby.infura.io/v3/" + infuraId);
+      },
+      network_id: 4,
+    },
   },
   // Solidity 0.8.13 Compiler
   compilers: {
     solc: {
       version: "^0.8.13",
+      settings: {
+        optimizer: {
+          enabled: true,
+          runs: 200
+        }
+      }
     },
   },
   // Moonbeam Truffle Plugin & Truffle Plugin for Verifying Smart Contracts

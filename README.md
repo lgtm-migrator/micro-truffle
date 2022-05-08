@@ -19,3 +19,4 @@ Truffle boilerplate code
 - [x] [Volta](https://volta.sh/) - Node.js version manager
 - [x] [GitHub Actions](https://github.com/features/actions) - GitHub CI/CD
 - [x] [Solhint](https://github.com/protofire/solhint) - linting utility for Solidity code
+- [x] [slither](https://github.com/crytic/slither) - Static Analyzer for Solidity, [detectors](https://github.com/crytic/slither/wiki/Detector-Documentation)
