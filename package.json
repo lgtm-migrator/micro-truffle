@@ -35,7 +35,7 @@
     "solidity-coverage": "^0.7.21",
     "sort-package-json": "^1.57.0",
     "truffle": "^5.5.12",
-    "truffle-plugin-verify": "^0.5.25"
+    "truffle-plugin-verify": "^0.5.32"
   },
   "engines": {
     "node": ">= 16.14 <17"
