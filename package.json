@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@openzeppelin/contracts": "^4.6.0",
-    "@truffle/hdwallet-provider": "2.0.8",
+    "@truffle/hdwallet-provider": "2.1.1",
     "dotenv": "^16.0.0",
     "moonbeam-truffle-plugin": "^1.4.0",
     "prettier": "^2.6.2",
